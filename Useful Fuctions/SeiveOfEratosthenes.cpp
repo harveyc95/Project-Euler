@@ -8,6 +8,10 @@
 // 			printf("%d\n", i);
 // 		}
 // 	}
+// 	
+// 	Created by Harvey Chen on 08/10/2015.
+//  Copyright (c) 2015 Harvey Chen. All rights reserved.
+
 void SieveOfEratosthenes (bool array[], int range) {
 	
 	array[0] = 0;

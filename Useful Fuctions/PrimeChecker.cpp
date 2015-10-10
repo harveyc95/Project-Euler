@@ -1,5 +1,8 @@
 // Prime checker
 // returns true if prime, false otherwise
+// 
+// Created by Harvey Chen on 08/10/2015.
+// Copyright (c) 2015 Harvey Chen. All rights reserved.
 
 bool isPrime (int n) {
 	if (n <= 1)

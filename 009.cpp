@@ -5,6 +5,9 @@
  * For example, 3^2 + 4^2 = 9 + 16 = 25 = 5^2.
  * There exists exactly one Pythagorean triplet for which a + b + c = 1000.
  * Find the product abc.
+ * 
+ * Created by Harvey Chen on 08/10/2015.
+ * Copyright (c) 2015 Harvey Chen. All rights reserved.
  */
 
 #include <stdio.h>

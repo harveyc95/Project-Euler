@@ -1,5 +1,8 @@
 // Palindrome number checker
 // call isPalindrome(int n) to check
+// 
+// Created by Harvey Chen on 08/10/2015.
+// Copyright (c) 2015 Harvey Chen. All rights reserved.
 
 bool isPalindrome (int n) {
 	int temp = n;

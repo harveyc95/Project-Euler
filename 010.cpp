@@ -2,6 +2,9 @@
  * Summation of primes
  * The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
  * Find the sum of all the primes below two million.
+ * 
+ * Created by Harvey Chen on 08/10/2015.
+ * Copyright (c) 2015 Harvey Chen. All rights reserved.
  */
 
 #include <stdio.h>

@@ -2,6 +2,9 @@
  * Smallest Multiple
  * 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
  * What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+ *
+ * Created by Harvey Chen on 08/10/2015.
+ * Copyright (c) 2015 Harvey Chen. All rights reserved.
  */
 
 #include <stdio.h>
