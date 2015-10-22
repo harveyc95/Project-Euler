@@ -23,12 +23,6 @@ using namespace std;
 int main  () {
 
 	unsigned long long array[101][101];	// row + 1 for padding
-	// set array to all 0
-	for (int i = 0; i < 101; i++) {
-		for (int j = 0; j < 101; j++) {
-			array[i][j] = 0;
-		}
-	}
 
 	ifstream input_file("067_triangle.txt");	// open the input file
 	if (!input_file.is_open()) {				// check for successful opening
@@ -36,30 +30,20 @@ int main  () {
 		return 0;
 	}
 
-	// read as long as the stream is good - any problem, just quit.
-	int input;
-	for (int i = 1; i <= 100; i++) {
+	int input, max;
+	for (int i = 0; i <= 100; i++) {
+		array[i][0] = 0;
+		if(i != 100) array[i][i + 1] = 0;
+		// 0 x x x x x x x x 0<-This one
+		//  \|\|\|\|\|\|\|\|\|
+		// 0 x x x x x x x x x ...
 		for (int j = 1; j <= i; j++) {
 			input_file >> input;
-			printf("%d ", input);
 			array[i][j] = input;
-		}
-		printf("\n");
-	}
-
-
-	for (int i = 1; i <= 100; i++) {
-		for (int j = 1; j <= i; j++) {
-			printf("%d ", array[i][j]);
 			array[i][j] += getMaxPath(array, i, j);
-			//printf("i: %d, j: %d is: %llu max is: %llu\n", i ,j,  lattice[i][j], getMaxPath(lattice, i, j));
+			if (i == 100)	max = max < array[100][j] ? array[100][j] : max;
 		}
-		printf("\n");
 	}
 
-	int max = 0;
-	for (int j = 0; j < 101; j++) {
-		max = max < array[100][j] ? array[100][j] : max;
-	}
 	printf("%d\n", max);
 }
